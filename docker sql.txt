@@ -1,0 +1,11 @@
+"docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=<FA-18Password>" -p 1433:1433 --name sql1 -h sql1 -d mcr.microsoft.com/mssql/server:2019-latest";
+
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=68<KG~T>bbQa3" -p 1433:1433 -v c:\temp\mssql:/var/opt/mssql --name sql1 -h sql1 --restart unless-stopped -d mcr.microsoft.com/mssql/server:2019-latest
+
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=68<KG~T>bbQa3" -p 1433:1433 -v mssql:/var/opt/mssql --name sql1 -h sql1 --restart unless-stopped -d mcr.microsoft.com/mssql/server:2019-latest
+
+docker run -e "SQLSVR=192.168.XXX.YYY" -p 807:80 --name creat createlistonpartial -d
+
+if port not accessible, use
+net stop winnat
+net start winnat

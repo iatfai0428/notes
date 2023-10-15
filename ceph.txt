@@ -7,3 +7,5 @@ ceph osd pool rm [pool-name] [pool-name] --yes-i-really-really-mean-it
 Set number of pg
 
 sudo ceph osd pool set [pool-name] pg_num [32]
+
+ceph-deploy sudo add-apt-repository PPA:ansible/ansible

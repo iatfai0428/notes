@@ -9,3 +9,8 @@ Set number of pg
 sudo ceph osd pool set [pool-name] pg_num [32]
 
 ceph-deploy sudo add-apt-repository PPA:ansible/ansible
+
+setup with cephadm
+1. install ubuntu server 22.04
+2. update upgrade
+3. 

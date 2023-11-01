@@ -13,4 +13,5 @@ ceph-deploy sudo add-apt-repository PPA:ansible/ansible
 setup with cephadm
 1. install ubuntu server 22.04
 2. update upgrade
-3. 
+3. sudo apt install cephadm -y
+4. sudo sudo cephadm bootstrap --mon-ip [192.168.1.140]

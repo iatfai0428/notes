@@ -15,3 +15,10 @@ setup with cephadm
 2. update upgrade
 3. sudo apt install cephadm -y
 4. sudo sudo cephadm bootstrap --mon-ip [192.168.1.140]
+
+on nodes
+1. install ubuntu server 22.04
+2. update, upgrade
+3. sudo apt install podman-docker ntp
+
+

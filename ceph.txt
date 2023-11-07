@@ -31,4 +31,5 @@ sudo ceph fs authorize ceph_fs client.[client.name] / r /volumes rw
 
 sudo mount -t ceph [client]@[cluster.id].[fs.name]=[/volumes] [mount.path] \
 -o mon_addr=[mon_1.ip]:6789/[mon_2.ip]:6789,secret=[client.key]
-
+sudo mount -t ceph iatfai0428@31ac8b06-7c65-11ee-b855-b602868d892e.ceph_fs=/volumes /mnt/cephfs/ \
+-o mon_addr=192.168.1.140:6789/192.168.1.141:6789,secret=AQCjgEhlI7rrExAAPD7WkbUWP3VwDv32rFxjww==
